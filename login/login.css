@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(/Assents/Fundo_InicialNet.jfif);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{width: 100%;}
+header img{
+    margin-left: 2rem;
+}
+.card_container{
+    background-color: rgba(0, 0, 0, 0.773);
+    max-width: 400px;
+    max-height: 1000px;
+    border-radius: 8px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    
+    
+}
+.card_container input{
+    display: block;
+    width: 92%;
+    background-color: rgb(54, 51, 51);
+    border-radius: 5px;
+    padding: 1.3rem;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}.card_container input[type="text"], .card_container input[type="password"]{
+   outline: 0;
+   padding: 2rem 1rem 10px 1rem;
+   border-bottom: 2px solid rgb(54, 51, 51);
+} .card_container input[type="text"]:focus, .card_container input[type="password"]:focus{
+    background-color: rgb(79, 74, 74);
+    border-bottom: 2px solid rgb(79, 74, 74);
+}
+.active_input{
+    color: rgb(209, 209, 10);
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.card_container input[type="text"]:focus::-webkit-input-placeholder, .card_container input[type="password"]:focus::-webkit-input-placeholder{
+    position: absolute;
+    top: 7px;
+    font-size: 15px;
+}.card_container input[type="text"]::placeholder, .card_container input[type="password"]::placeholder{
+    position: absolute;
+    bottom: 20px;
+    transition: 0.2s;
+}
+
+.inputpassword{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 32px;
+    
+}.inputpassword input{
+    margin: 0;
+}
+.inputpassword span{
+    user-select: none;
+    background-color: rgb(79, 74, 74);
+    border-bottom: 2px solid rgb(79, 74, 74);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color:rgb(144, 135, 135);
+    max-width: 40%;
+    cursor: pointer;
+    height: calc(100% - 2px);
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 0;
+    right: 0;
+    font-size: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+.subButton p{
+    position: relative;
+}
+.subButton input{
+    width: 20px;
+}
+
+.card_container input[type="submit"]{
+    width: 100%;
+    background-color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+.subButton p{
+    display: flex;
+    align-items: center;
+}
+.subButton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+}.subButton input{
+    width: auto;
+    margin: 0;
+    margin-right: 5px;
+}.subButton a,.subButton p{
+    text-decoration: none;
+    color: rgb(219, 204, 204);
+}.subButton a:hover{text-decoration: underline;}
+
+.textsec{
+    margin-top: 4rem;
+    text-align: justify;
+}.textsec p:nth-child(1){
+    font-size: 1.4rem;
+    color:rgb(128, 115, 115);
+    margin-bottom: 1rem;
+}.textsec p:nth-child(1) a{
+    color: white;
+    margin-left: 5px;
+}.textsec p:nth-child(2){
+    color: rgb(176, 170, 170);
+}.textsec p:nth-child(2) a{
+    margin-left: 5px;
+    color: blue;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.756);
+    width: 100%;
+    max-height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer p, footer a{
+    color:rgb(188, 178, 178);
+}footer p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}footer ul{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}footer li{
+    margin-bottom: 1rem;
+    margin-right: 10vw;
+} footer a:hover{
+    text-decoration: underline;
+}.container_footer{
+    margin: 2rem;
+}
+.m-r{
+    margin-right: 3rem;
+}
+
+@media(max-width: 990px){
+    body{
+        background-image: none;
+        display: flex;
+        padding: 0;
+        background-color: rgba(0, 0, 0);
+    }
+    header{
+        background-color: rgba(0, 0, 0);
+    }header img{
+        width: 120px;
+    }
+    .card_container{
+        background-color: rgba(0, 0, 0);
+        width: 100%;
+        max-width: none;
+        max-height: 1000px;
+        border-radius: 0px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+
+        
+        
+    } .card_container input[type="text"]{
+        width: calc(100% - 2rem);
+        padding: 2rem 1rem 10px 1rem;
+
+    }
+    .card_container input[type="password"]{
+        width: 100%;
+        padding: 2rem 1rem 10px 1rem;
+    }.card_content{
+        margin: 2rem;
+        
+    }.container_footer{
+        margin-top: 100px;
+
+    }
+    
+    
+}
+@media(max-width: 600px){
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }footer li{
+        margin-right: 0;
+    }
+}
+

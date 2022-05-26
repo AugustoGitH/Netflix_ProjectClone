@@ -1,0 +1,299 @@
+:root{
+    --rednetflix: rgb(255, 8, 8);
+    --fontsize_sectionsP: 1.8rem;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{cursor: pointer;}
+h1{font-size: 3.2rem;}
+
+hr{
+    height: 14px;
+    background-color: rgb(36, 31, 31);
+}
+input:focus{
+    border: 0.5px solid blue;
+    outline: none;
+}
+
+/* ---HEADER--- */
+header{
+    width: 100%;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3rem 10px 3rem;
+}.header_content button{
+    font-size: 1rem;
+}.header_content select{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 2rem;
+}.header_content option{
+    color: white;
+    background-color: gray;
+}
+.header_content button:nth-child(2){
+    background-color: var(--rednetflix);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+/* ---HEADER--- */
+
+/* ---HOME--- */
+.filter_home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(/Assents/Fundo_InicialNet.jfif);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.home_content{
+    height: 70%;
+    max-width: 700px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.home_content p:nth-child(2){
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.home_content p:nth-child(3){
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+.home_content form{
+    width: 90%;
+    display: flex;
+
+}
+.home_content form input[type="email"]{
+    padding: 15px 8px 15px 8px;
+    width: 80%;
+    font-size: 1.1rem;
+    color: black;
+}.home_content form input[type="submit"]{
+    background-color: rgba(255, 0, 0, 0.833);
+    padding: 17px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.home_content form input[type="submit"]:hover{
+    background-color: rgba(255, 0, 0, 1);
+}
+/* ---HOME--- */
+
+/* ---SECTION1--- */
+
+.section{
+    background-color: black;
+    max-height: 2000px;
+}
+.section p{
+    font-size: var(--fontsize_sectionsP);
+}
+.section_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 3rem 7rem 3rem;
+}
+.text_sec{
+    max-width: 50%;
+}.text_sec p{
+    margin-top: 1rem;
+}
+.section_content video{
+    max-width: 400px;
+    min-width: 100px;
+    margin-left: 3rem;
+}
+@media(max-width: 1000px){
+    .section_content{
+        flex-wrap: wrap;
+        padding: 3rem;
+        text-align: center;
+    }.text_sec{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }.imgTellElevem{
+        order: 2;
+    }.section_content video{
+        margin-left: 0;
+    }
+    #img_kid{
+        order: 2;
+    }
+}
+
+
+
+
+
+
+/* ---SECTION1--- */
+
+/* ---SECTION2--- */
+#img_kid{
+    max-width: 500px;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+.imgTellElevem{
+    position: relative;
+    margin-right: 2rem;
+}
+.divfixedImgtell{
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 11%;
+    padding: 0.6rem;
+    width: 360px;
+    height: 90px;
+    border-radius: 15px;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}.divfixedImgtell img{
+    width: 60px;
+}
+
+/* ---SECTION2--- */
+
+
+/* ---PERGUNTAS--- */
+.perguntas{
+    background-color: black;
+    max-height: 6000px;
+}
+.perguntas_content{
+    padding: 6rem 2rem 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.perguntas_container{
+    margin-top: 2rem;
+    width: 80%;
+    
+}
+.perguntas_container li{
+    background-color: rgba(90, 82, 82, 0.863);
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 16px 30px 16px 30px;
+}
+.pergunta_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.reposta_card{
+    margin-top: -0.5rem;
+    font-size: 1.8rem;
+
+    display: none;
+}.reposta_card p{
+    margin-top: 1rem;
+}
+.x{
+    
+    font-size: 60px;
+    cursor: pointer;
+    transform: rotate(-136deg);
+    transition: 0.3s;
+}
+
+/* ---PERGUNTAS--- */
+
+/* ---FOOTER--- */
+/* ---FOOTER--- */
+
+
+@media(max-width: 700px){
+    .header_content img{
+        width: 100px;
+    } .header_content select{
+        margin-right: 17px;
+    }
+    .header_content{
+        padding: 10px;
+        transform: scale(0.9);
+    }.home_content{
+        padding: 1rem;
+    }
+    .home_content h1{
+        font-size: 30px;
+    }.home_content p:nth-child(2){
+        font-size: 25px;
+    }.home_content p:nth-child(3){
+        font-size: 18px;
+    }.home_content form input[type="submit"]{
+        font-size: 1.2rem;
+    }
+    .imgTellElevem{
+        transform: scale(0.7);
+        margin: -5rem;
+    }.perguntas_content{
+        padding: 1rem;
+    }.perguntas_container{
+        width: 100%;
+    }.perguntas_container li{
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }.perguntas_container li i{
+        font-size: 28px;
+    }.text_sec h1, .perguntas_content h1{
+        font-size: 26px;
+    }
+    .text_sec p, .perguntas_content p{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 800px){
+    #img_kid{
+        margin: 0;
+    }.perguntas_content{
+        padding-top: 3rem;
+    }
+    
+    
+}

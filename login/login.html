@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="imagem/png" href="/Assents/732228.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="/login/login.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/Assents/Netflix-Logo.png" width="200px"></a>
+    </header>
+    <div class="card_container">
+        <div class="card_content">
+            <h1>Entrar</h1>
+            <form>
+                <input onkeyup = "borderAlertEmail()" autocomplete="off" id="inputtext" type="text" placeholder="Email o número de telefone">
+                <p class="active_input"></p>
+                <div onkeyup = "borderAlertPassWord(1)" class="inputpassword">
+                    <input id="inputpassword" type="password" placeholder="Senha">
+                    <span id="buttonMostrarO">mostrar</span>
+                </div>
+                <p class="active_input"></p>
+                <input type="submit" value="Entrar">
+                <div class="subButton">
+                    <p><input type="checkbox"> Lembre-se de mim </p>
+                    <a href="">Precisa de ajuda?</a>
+                </div>
+                <div class="textsec">
+                    <p>Novo por aqui?<a href="">Assine agora.</a></p>
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.<a href="">Saiba mais.</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container_footer">
+            <p>Dúvidas? Ligue 0800 591 8942</p>
+            <ul>
+                <li><a href="">Perguntas frequentes</a></li>
+                <li><a href="">Preferências de cookies</a></li>
+                <li><a href="">Centro de ajuda</a></li>
+                <li><a href="">Informações corporativas</a></li>
+                <li><a href="">Termo de uso</a></li>
+                <li><a href="">Privacidade</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/login/login.js"></script>
+</body>
+</html>
